@@ -7,7 +7,7 @@ The key components that I learnt from this project are:
   <br>
   -Hosting a website through Firebase.
   <br>
-  -Basic CSS styling, implementing shared and individual styles to components.
+  &emsp-Basic CSS styling, implementing shared and individual styles to components.
   <br>
   -JavaScript functionality, creating a coffee ordering page using only JavaScript.
   <br>
