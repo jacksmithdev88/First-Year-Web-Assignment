@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page of my portfolio">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+   
+    <!--This is the title bar that displays at the top of the page-->
+    <div id="header">
+        <header>Home</header>
+    </div>
+
+    <!--This is the main navigation bar on the home page-->  
+    <ul id="main">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="skills.html">Skills</a></li>
+    </ul>
+
+    <!--This is the div that houses most of my content for this page-->
+    <div id="main-div">
+        <H2>Introduction</H2>
+        <img src="pictures/me.jpg" alt="Picture of me" class="pic"> <br><br>
+        <div>Hello, my name is Jack Smith. I am currently studying Computer Science at Staffordshire University. I am in my first year of studying. Currently I am taking 4 modules at University. These modules are:
+            <br><br><br>
+            -Digital Technologies: This course explores the fundamentals of Computer Science and looks at the hardware that is used inside computers. It also teaches mathematical components of Computer Science, such as Big O notation and Binary.
+            <br><br><br>
+            -Networking Concepts and Cyber Security: This course explores the importance of Networking. It also emphasises the importance of good Cyber Security, aswell as teaching us good practices within networking and security.
+            <br><br><br>
+            -Software Development and Application Modelling: This course has taught the importance of Application Modelling, including certain types of methodologies. It has also taught 2 programming languages: C# and Python.
+            <br><br><br>
+            -Web Development and Operating Systems: This course has taught the fundamentals of creating websites and web applications. It has also taught us the basics of an Operating System called Linux. 
+        </div>
+        <br><br>
+        <h2>About Me</h2> 
+        <img src="pictures/aboutme.jpg" alt="about me" class="pic">
+        <div>I am currently 18 years old, turning 19 in July of 2020. I have many hobbies that give me skills and help towards my employability. <br> First of all, I like to play guitar which helps me with my coordination and helps with my teamwork when I play with others. <br> Secondly, I like to code in my free time, meaning that my work will also become my hobby, causing me to be even more motivated to complete work.<br>Finally I also like to play Video Games in my spare time, which also allows me to have a good understanding of computers, as this is required in some aspects of gaming.</div>
+        <br><br>
+        <h2>Contact</h2>
+        <img src="pictures/contact.png" alt="contact me" class="pic">
+        <div>All of my contact details that you may need will be found in the footer of every web page on this website.</div>
+        <br><br>
+
+        
+    <!--This paragraph credits all of the photos that I used, that were not mine-->
+        <p id="sources">
+            Image sources:<br>https://www.pngitem.com/middle/oTJhim_contact-us-icon-png-free-transparent-cartoons-contact/ <br> https://cdn.dribbble.com/users/24103/screenshots/2401985/new-mark.png<br>http://www.themarketingsage.com/seven-tips-to-improve-the-about-me-part-of-your-site/
+        </p>
+
+    </div>
+
+
+
+    <!--This code allows me to create the footer at the bottom of the page-->
+    <footer>Jack Smith<br>
+        s015133j@student.staffs.ac.uk
+    </footer>
+
+    
+    <!--This is the code that allows the service worker to work on this page-->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('serviceworker.js').then(
+                    function(registration) {
+                        console.log('Service worker registration successful', 
+                                     registration);
+                    }, 
+                    function(err) {
+                        console.log('Service worker registration failed', err);
+                });
+            });
+        }
+        </script>
+</body>
+</html>

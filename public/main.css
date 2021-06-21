@@ -1,0 +1,116 @@
+form {
+    text-align: center;
+    margin:0 auto;
+}
+
+p {
+    padding: 10px;
+}
+
+* { 
+    background-color: #c2cacc;
+}
+
+#button {
+    text-align: center; 
+}
+
+#header, header {
+    border:0;
+    padding:0px 10px 10px 10px;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    height: 50px;
+    background-color: darkgrey;
+}
+
+#main {
+    overflow: hidden;  
+    padding: 10px;
+}
+
+#main a{ 
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a :hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    background-color: darkgrey;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+head {
+    background-color: darkgrey;
+    width: auto;
+}
+
+li, button, a{
+    background-color: darkgrey;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#output, #order, #total { 
+    background-color: darkgrey;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#main-div {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#Shots {
+    display: none;
+}
+
+#center { 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic { 
+    width: 200px;
+}
+
+@media only screen and (max-width: 500px){ 
+    #main {
+        display: grid;
+    }
+    #sources { 
+        bottom: 0;
+        font-size: 8px;
+    }
+
+    #order {
+        padding-bottom: 20px;
+    }
+}

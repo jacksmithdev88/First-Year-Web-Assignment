@@ -1,0 +1,85 @@
+
+header {
+    background-color: gray;
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+}
+
+#main-div {
+    display: flex;
+}
+
+.column { 
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer, footer { 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: black;
+    text-align: center;
+}
+
+ul, li, a{
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+@keyframes mainAnimation {
+    0% {background-color: rebeccapurple;}
+    50% {background-color: burlywood;}
+    100% {background-color: gray;}
+}
+
+* {
+    background-color: white;
+    animation-name: mainAnimation;
+    animation-duration: 3s;
+}
+
+.title { 
+    text-align: center;
+}
+
+#mepic {
+    width: 400px;
+}
+
+#main a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+#main {
+    padding: 10px;
+}
+
+p, h2{
+    background-color: gray;
+    color: black;
+}
+
+@media only screen and (max-width: 750px) { 
+    main {
+        display: block;
+    }
+    .column {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>ECMA Script page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div id="header">
+        <header>JavaScript</header>
+    </div>
+    <ul id="main">
+        <li><a href="skills.html">Back</a></li>
+    </ul>
+    
+    <div id=container>
+        <form>
+            <h2>Coffee Ordering Form</h2>
+            <p>
+                <label>Size of drink:</label>
+                
+                <select name="size" id="size">
+                    <option value="Small">Small</option>
+                    <option value="Medium" selected="selected">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Choice of drink:</label>
+                <select name="drinks" id="drinks">
+                    <option value="Latte">Latte</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Flat White">Flat White</option>
+                    <option value="Espresso">Espresso</option>
+                    <option value="Americano">Americano</option>
+                </select>
+            </p>
+
+            <p id="milk">
+                <label>Milk:</label>
+
+                <select name="milkchoice" id="milkchoice">
+                    <option value="Whole Milk">Whole</option>
+                    <option value="Skimmed Milk">Skimmed</option>
+                    <option value="Semi-Skimmed Milk" selected="selected">Semi-Skimmed</option>
+                    <option value="Coconut Milk">Coconut</option>
+                    <option value="Soya Milk">Soya</option>
+                </select>
+                
+            </p>
+            
+            <p>
+                <label>Extras:</label>
+
+                <select name="extras" id="extras">
+                    <option value="Sugar">Sugar</option>
+                    <option value="Cream">Cream</option>
+                    <option value="Syrup">Syrup</option>
+                </select>
+
+                <select name="shots" id="Shots">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+            </p>
+        </form>
+        <div id="button">
+            <button id="add">Add to order</button>
+            <button id="place">Place order</button>
+            <button id="addFav">Add to favourites</button>
+            <button id="orderFav">Order favourites</button>
+            <br><br>
+            <div id="text">
+                <p id="output">Price of current item:</p>
+                <p id="total">Price of total order:</p>
+                <p id="order">Your order:</p>
+            </div>
+        </div>
+
+
+    </div>
+    <footer>Jack Smith<br>
+        s015133j@student.staffs.ac.uk
+    </footer>
+    <script src="scripts/ECMAscript.js"></script>
+</body>
+</html>

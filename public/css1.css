@@ -1,0 +1,78 @@
+header { 
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: sticky;
+    font-size: 30px;
+    margin-left: 180px;
+}
+
+* {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: antiquewhite;
+}
+
+#main-div {
+    margin-left: 180px;
+}
+
+#main {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 16px;
+    animation-name: mainAnimation;
+    animation-duration: 3s;
+}
+
+ul, li, a {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    left: 0;
+    text-align: left;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+p, h2 { 
+    background-color: black;
+    color: white;
+}
+
+#main-div {
+    padding-bottom: 100px;
+}
+
+@keyframes mainAnimation {
+    0% {
+        transform: scale(0.2);
+    } 
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 500px){ 
+    .pic {
+        width: 100px;
+    }
+}
